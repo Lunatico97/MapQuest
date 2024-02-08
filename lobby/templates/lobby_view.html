@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
 
+{% load static %}
 {% block content %}
     <span>
         <a href="{% url 'lobbies' %}">Lobby</a> /
@@ -9,4 +10,7 @@
     <h2> {{ lobby.name }} </h2>
     <h4> Active members: ({{lobby.count}}/25) </h4>
     <p> {{ lobby.purpose }} </p>
+    <div class="lobby-topic-image">
+        <img src="../static/images/{{lobby.pk}}.png" width="300px" height="300px">
+    </div>
 {% endblock %}

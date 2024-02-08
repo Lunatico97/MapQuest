@@ -1,0 +1,14 @@
+.header{
+    background-color: aqua ;
+    padding: 5px ;
+}
+
+.footer{
+    background-color: aqua ;
+    padding: 10px ;
+}
+
+.lobby-topic-image{
+    width: 300px ;
+    height: 400px ;
+}
