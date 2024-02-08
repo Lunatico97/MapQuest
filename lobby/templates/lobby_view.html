@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <span>
+        <a href="{% url 'lobbies' %}">Lobby</a> /
+        {{ menu_item.name }}
+        
+    </span>
+    <h2> {{ lobby.name }} </h2>
+    <h4> Active members: ({{lobby.count}}/25) </h4>
+    <p> {{ lobby.purpose }} </p>
+{% endblock %}

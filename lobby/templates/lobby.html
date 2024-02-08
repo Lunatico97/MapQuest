@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2> Active Lobbies </h2>
+    {% for lobby in lobbies %}
+        <h4>
+            <a href="{% url 'lobby-view' id=lobby.pk %}"> {{ lobby.name }} </a> ({{lobby.count}}/25) 
+        </h4>
+    {% endfor %}
+{% endblock %}
