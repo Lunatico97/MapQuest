@@ -1,11 +1,15 @@
 {% extends 'index.html' %}
 
 {% load static %}
+
+% block title %}
+    MapQuest | {{lobby.name}}
+{% endblock %}
+
 {% block content %}
     <span>
         <a href="{% url 'lobbies' %}">Lobby</a> /
-        {{ menu_item.name }}
-        
+        {{ lobby.name }}
     </span>
     <h2> {{ lobby.name }} </h2>
     <h4> Active members: ({{lobby.count}}/25) </h4>
